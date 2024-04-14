@@ -1,0 +1,71 @@
+  :root {
+  --main-font: 'Raleway', serif;
+  --secondary-font: "Roboto Flex",sans-serif;
+  }
+
+  .header h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  }
+
+  .header li {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  }
+
+  .hero h1 {
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  }
+
+  .hero button {
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  }
+
+  .main-h4 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  }
+
+  .main-p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }
+
+  .submain h2 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  }
+
+  .team h2 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  }
+
+  .team-names {
+  font-family: var(--secondary-font);
+  }
+
+  .team-roles {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }
+
+  .footer h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  }
+
+  .footer p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }
+
+  .footer a {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }

@@ -1,0 +1,44 @@
+  :root {
+  --main-font: 'Raleway', serif;
+  --secondary-font: "Roboto Flex",sans-serif;
+  }
+  
+  .header h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  }
+        
+  .header li {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  }
+   
+  .hero button {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  }
+  
+  .project-name {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  }
+
+  .progect-direction {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }
+  
+  .footer h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  }
+    
+  .footer p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }
+    
+  .footer a {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  }
