@@ -1,44 +1,136 @@
   :root {
+  --main-color: #2F303A;
+  --accent-color: #2196F3;
+  --paragraph-color: #757575;
+  --footer-p-color: #FFFFFF;
+  --hero-button-color: #F5F4FA;
   --main-font: 'Raleway', serif;
   --secondary-font: "Roboto Flex",sans-serif;
   }
-  
+
   .header h3 {
   font-family: var(--main-font);
   font-weight: 700;
   }
-        
+
   .header li {
   font-family: var(--secondary-font);
   font-weight: 500;
+  list-style-type: none;
+  }
+
+  .header li a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: 0.3s ease;
+  }
+
+  .header li a:hover {
+  color: var(--accent-color);
   }
    
-  .hero button {
+  .hero {
+    text-align: center;
+  }
+
+  .portfolio-button {
   font-family: var(--secondary-font);
-  font-weight: 500;
+  font-weight: 500; 
+  border-radius: 4px;
+  width: auto;
+  height: 38px;
+  background-color: var(--hero-button-color);
+  border: none;
+  padding: 0 15px;
+  margin: 0 5px;
+  }
+
+  .portfolio-button:hover {
+  color: var(--hero-button-color);
+  background-color: var(--accent-color);
+  transition: 0.3s ease;
+  }
+
+  .portfolio ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  justify-content: center;
+  }
+  
+  .portfolio li {
+  width: 370px;
+  text-align: left;
+  }
+  
+  .portfolio img {
+  width: 100%;
+  height: auto;
   }
   
   .project-name {
   font-family: var(--secondary-font);
   font-weight: 700;
+  line-height: auto;
+  font-size: 18px;
+  color: var(--main-color);
   }
 
-  .progect-direction {
+  .project-direction {
   font-family: var(--secondary-font);
   font-weight: 400;
+  line-height: auto;
+  font-size: 16px;
+  color: var(--paragraph-color);
+  }
+
+  .project-name,
+  .project-direction {
+  margin: 4px 0;
+  }
+  
+  .footer {
+  background-color: #2F303A;
+  height: 252px;
   }
   
   .footer h3 {
   font-family: var(--main-font);
   font-weight: 700;
+  padding-left: 120px;
+  padding-top: 60px;
   }
-    
+  
   .footer p {
   font-family: var(--secondary-font);
   font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--footer-p-color);
+  padding-left: 120px;
   }
-    
+  
+  .footer ul {
+  list-style-type: none;
+  padding-left: 120px;
+  }
+  
   .footer a {
   font-family: var(--secondary-font);
   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--paragraph-color);
+  text-decoration: none;
+  }
+  
+  .footer a:hover {
+  color: var(--accent-color);
+  transition: 0.3s ease;
   }
