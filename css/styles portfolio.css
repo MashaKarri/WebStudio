@@ -16,12 +16,10 @@
   .header li {
   font-family: var(--secondary-font);
   font-weight: 500;
-  list-style-type: none;
   }
 
   .header li a {
   color: var(--main-color);
-  text-decoration: none;
   transition: 0.3s ease;
   }
 
@@ -52,7 +50,6 @@
   }
 
   .portfolio ul {
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 370px);
   grid-auto-rows: auto;
@@ -116,7 +113,6 @@
   }
   
   .footer ul {
-  list-style-type: none;
   padding-left: 120px;
   }
   
@@ -127,7 +123,6 @@
   line-height: 24px;
   text-align: left;
   color: var(--paragraph-color);
-  text-decoration: none;
   }
   
   .footer a:hover {
