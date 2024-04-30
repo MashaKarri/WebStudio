@@ -9,6 +9,13 @@
   --secondary-font: "Roboto Flex",sans-serif;
   }
 
+  .container{
+  width: 1600px;
+  height: 2346px;
+  margin-right: 215px; 
+  margin-left: 215px;
+  }
+
   .header h3 {
   font-family: var(--main-font);
   font-weight: 700;
@@ -22,6 +29,7 @@
   .header li a {
   color: var(--main-color);
   transition: 0.3s ease;
+  text-decoration: none;
   }
 
   .header li a:hover {
@@ -200,6 +208,7 @@
   line-height: 24px;
   text-align: left;
   color: var(--paragraph-color);
+  text-decoration: none;
   }
 
   .footer a:hover {
