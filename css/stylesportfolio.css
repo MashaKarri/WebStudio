@@ -15,28 +15,63 @@
   margin-left: 215px;
   }
 
-  .header h3 {
+  .profile-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  }
+  
+  .profile-portfolio h3 {
   font-family: var(--main-font);
   font-weight: 700;
+  display: flex;
   }
-
-  .header li {
+  
+  .profile-portfolio .links-nav-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  }
+  
+  .profile-portfolio .left-links,
+  .profile-portfolio .right-links {
+  display: flex;
+  align-items: center;
+  }
+  
+  .profile-portfolio .left-links {
+  margin-left: 20px;
+  }
+  
+  .profile-portfolio .right-links {
+  margin-right: 20px;
+  margin-left: auto;
+  }
+  
+  .profile-portfolio li {
   font-family: var(--secondary-font);
   font-weight: 500;
+  margin-right: 20px;
   }
-
-  .header li a {
+  
+  .profile-portfolio li a {
   color: var(--main-color);
   transition: 0.3s ease;
   text-decoration: none;
   }
-
-  .header li a:hover {
+  
+  .profile-portfolio li a:hover {
   color: var(--accent-color);
   }
    
+  .profile-portfolio {
+  text-align: center;
+  }
+   
   .hero {
-    text-align: center;
+  text-align: center;
   }
 
   .portfolio-button {
@@ -49,6 +84,7 @@
   border: none;
   padding: 0 15px;
   margin: 0 5px;
+  margin-bottom: 20px;
   }
 
   .portfolio-button:hover {
@@ -63,6 +99,7 @@
   grid-auto-rows: auto;
   grid-gap: 20px;
   justify-content: center;
+  padding-bottom: 60px;
   }
   
   .portfolio li {
@@ -81,6 +118,7 @@
   line-height: auto;
   font-size: 18px;
   color: var(--main-color);
+  padding-top: 15px;
   }
 
   .project-direction {
@@ -89,23 +127,23 @@
   line-height: auto;
   font-size: 16px;
   color: var(--paragraph-color);
-  }
-
-  .project-name,
-  .project-direction {
-  margin: 4px 0;
+  padding-top: 10px;
   }
   
   .footer {
   background-color: #2F303A;
+  width: 1600px;
   height: 252px;
+  padding-top: 60px;
+  padding-left: 215px;
+  display: flex;
+  flex-direction: column;
   }
   
   .footer h3 {
   font-family: var(--main-font);
   font-weight: 700;
-  padding-left: 120px;
-  padding-top: 60px;
+  font-size: 26px;
   }
   
   .footer p {
@@ -117,11 +155,7 @@
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--footer-p-color);
-  padding-left: 120px;
-  }
-  
-  .footer ul {
-  padding-left: 120px;
+  padding-top: 15px;
   }
   
   .footer a {
