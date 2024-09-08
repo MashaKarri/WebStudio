@@ -9,7 +9,7 @@
   --secondary-font: "Roboto Flex",sans-serif;
   }
 
-  .container{
+  .container {
   width: 1600px;
   height: 2346px;
   margin-right: 215px; 
@@ -26,6 +26,7 @@
   .header h3 {
   font-family: var(--main-font);
   font-weight: 700;
+  font-size: 26px;
   display: flex;
   }
 
@@ -122,19 +123,19 @@
   }
   
   .main-li:nth-child(1)::before {
-  content: url("../images/main/main_1.jpg");
+  content: url("../images/main/possibilities/possibilities_1.jpg");
   }
   
   .main-li:nth-child(2)::before {
-  content: url("../images/main/main_2.jpg");
+  content: url("../images/main/possibilities/possibilities_2.jpg");
   }
   
   .main-li:nth-child(3)::before {
-  content: url("../images/main/main_3.jpg");
+  content: url("../images/main/possibilities/possibilities_3.jpg");
   }
   
   .main-li:nth-child(4)::before {
-  content: url("../images/main/main_4.jpg");
+  content: url("../images/main/possibilities/possibilities_4.jpg");
   }
 
   .main-h4 {
@@ -191,7 +192,8 @@
 
   .team {
   background-color: var(--team-background-color);
-  height: 648px;
+  width: 1600px;
+  height: 708px;
   }
   
   .team-workers {
@@ -209,8 +211,10 @@
   width: 270px;
   height: 370px;
   background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  0px 2px 1px 0px rgba(0, 0, 0, 0.20);
   }
   
   .team h2 {
@@ -237,12 +241,16 @@
   }
   
   .team-names {
+  font-family: var(--secondary-font);
   font-weight: 600;
+  font-size: 16px;
   padding-top: 30px;
   line-height: 18.75px;
   }
 
   .team-roles{
+  font-family: var(--secondary-font);
+  font-weight: 400;
   color: var(--paragraph-color);
   padding-bottom: 30px;
   padding-top: 10px;
