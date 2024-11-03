@@ -22,7 +22,7 @@
     <div class="container">
       <header class="header">
         <h3 class="title-profil" style="color: rgb(0, 0, 0)">
-          <span class="title-profil" style="color: rgb(62, 107, 241)">Web</span
+          <span class="title-profil" style="color: rgb(33, 150, 243)">Web</span
           >Studio
         </h3>
         <nav class="links-nav-profile">
@@ -57,7 +57,56 @@
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button type="button">Замовити послугу</button>
+          <button data-modal-open>Замовити послугу</button>
+        </section>
+        <section class="modal-backdrop is-hidden" data-modal>
+          <div class="modal-window">
+            <button class="close-btn" data-modal-close>×</button>
+            <h2>Залиште свої дані, ми вам передзвонимо</h2>
+            <form>
+              <div class="input-group">
+                <label for="name" class="input-label">Ім'я</label>
+                <div class="input-wrapper">
+                  <svg class="contact-icon" width="16" height="16">
+                    <use href="./SVG/icons/symbol-defs.svg#contact"></use>
+                  </svg>
+                  <input type="text" id="name" />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="phone" class="input-label">Телефон</label>
+                <div class="input-wrapper">
+                  <svg class="contact-icon" width="16" height="16">
+                    <use href="./SVG/icons/symbol-defs.svg#telephone"></use>
+                  </svg>
+                  <input type="tel" id="phone" />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="email" class="input-label">Пошта</label>
+                <div class="input-wrapper">
+                  <svg class="contact-icon" width="16" height="16">
+                    <use href="./SVG/icons/symbol-defs.svg#envelope-2"></use>
+                  </svg>
+                  <input type="email" id="email" />
+                </div>
+              </div>
+
+              <label for="comment">Коментар</label>
+              <textarea id="comment" placeholder="Введіть текст"></textarea>
+
+              <div class="checkbox-container">
+                <input type="checkbox" id="agreement" />
+                <label for="agreement"
+                  >Погоджуюся з розсилкою та приймаю
+                  <a href="#">Умови договору</a>
+                </label>
+              </div>
+              <button type="submit">Відправити</button>
+            </form>
+          </div>
         </section>
         <section class="main">
           <ul class="main-ul">
@@ -269,7 +318,7 @@
             <li><a href="#" class="li-footer">+38 096 111 11 11</a></li>
           </ul>
         </div>
-        <div class="footer-right">
+        <div class="footer-center">
           <p class="contactus-title">ПРИЄДНУЙТЕСЬ</p>
           <ul class="contactus-list">
             <li class="contactus-item">
@@ -294,7 +343,24 @@
             </li>
           </ul>
         </div>
+        <div class="footer-right">
+          <div class="left-column">
+            <p class="spreading-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+            <form class="footer-form">
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="E-mail" />
+            </form>
+          </div>
+          <div class="right-column">
+            <button type="submit">
+              Підписатися<svg class="footer-icon" width="24" height="24">
+                <use href="./SVG/icons/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </footer>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
