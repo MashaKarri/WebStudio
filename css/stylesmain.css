@@ -76,6 +76,10 @@
   margin-right: 50px;
   }
 
+  .header lu:hover {
+  font-weight: 600;
+  }
+
   .header li a {
   color: var(--main-color);
   text-decoration: none;
