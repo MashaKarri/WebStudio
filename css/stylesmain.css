@@ -48,6 +48,23 @@
   margin-left: 20px;
   }
 
+  .header .left-links .link-left a.active {
+  color: var(--accent-color);
+  position: relative;
+  }
+
+  .header .left-links .link-left a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  bottom: -20px;
+  transform: translateY(100%);
+  }
+
   .header .right-links {
   margin-right: 20px;
   margin-left: auto;

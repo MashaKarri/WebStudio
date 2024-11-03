@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  border-bottom: solid 1px #ECECEC;
   }
   
   .profile-portfolio h3 {
@@ -45,6 +46,23 @@
   
   .profile-portfolio .left-links {
   margin-left: 20px;
+  }
+
+  .profile-portfolio .left-links .link-left a.active {
+  color: var(--accent-color);
+  position: relative;
+  }
+
+  .profile-portfolio .left-links .link-left a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  bottom: -20px;
+  transform: translateY(100%);
   }
   
   .profile-portfolio .right-links {
@@ -99,7 +117,7 @@
   box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
   }
 
-  .portfolio ul {
+  .projects-set {
   display: grid;
   grid-template-columns: repeat(3, 370px);
   grid-auto-rows: auto;
@@ -109,20 +127,47 @@
   padding-bottom: 60px;
   }
   
-  .portfolio li {
+  .projects-item {
   width: 370px;
   height: 404px;
   border: 1px solid #EEEEEE;
   }
 
-  .portfolio li:hover {
+  .projects-item:hover {
   box-shadow: 0px 1px 1px 0px rgb(0, 0, 0, 0.12),
   1px 4px 6px 0px rgb(0, 0, 0, 0.16);
+  cursor: pointer;
   }
-  
-  .portfolio img {
+
+  .portfolio-card-wrap {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  }
+
+  .project-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 3%;
+  text-align: left;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+  z-index: 1;
+  }
+
+  .projects-item:hover .project-overlay-text {
+  transform: translatey(0);
   }
   
   .project-name {
