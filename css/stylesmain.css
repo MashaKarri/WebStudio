@@ -48,6 +48,23 @@
   margin-left: 20px;
   }
 
+  .header .left-links .link-left a.active {
+  color: var(--accent-color);
+  position: relative;
+  }
+  
+  .header .left-links .link-left a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  bottom: -20px;
+  transform: translateY(100%);
+  }
+
   .header .right-links {
   margin-right: 20px;
   margin-left: auto;
@@ -89,7 +106,7 @@
   font-weight: 900;
   color: var(--team-background-color);
   line-height: 60px;
-  letter-spacing: 5%;
+  letter-spacing: 6%;
   font-size: 44px;
   text-align: center;
   }
